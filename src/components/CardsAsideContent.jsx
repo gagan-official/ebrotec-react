@@ -18,7 +18,7 @@ function CardsAsideContent({}) {
           reprehenderit in voluptate velit esse cillum dolore eu
         </p>
       </div>
-      <div className="rightContainer flex flex-wrap gap-[30px] md:gap-0 lg:w-auto justify-around w-full shrink-0">
+      <div className="rightContainer flex flex-wrap flex-row-reverse gap-[30px] md:gap-0 lg:w-auto justify-around w-full shrink-0">
         {cardData.map(({ id, ...items }) => (
           <PillCard key={id} {...items} />
         ))}
@@ -32,14 +32,15 @@ const cardData = [
     id: 1,
     heading: "A Journey of Hope and Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-    imgSrc: "/images/image6.webp",
+    imgSrc: "/images/image7.webp",
+    className: "lg:scale-90 lg:origin-right peer lg:hover:scale-100",
   },
   {
     id: 2,
     heading: "A Journey of Hope and Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-    imgSrc: "/images/image7.webp",
-    className: "lg:scale-90 lg:origin-right",
+    imgSrc: "/images/image6.webp",
+    className: "lg:peer-hover:scale-90 lg:origin-left",
   },
 ];
 

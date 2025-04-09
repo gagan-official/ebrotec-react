@@ -9,7 +9,7 @@ function PillCard({
 }) {
   return (
     <div
-      className={`rounded-[25px] overflow-hidden bg-[var(--secondary)] w-full md:max-w-[313px] shrink-0 ${className}`}
+      className={`rounded-[25px] transition-transform duration-700 overflow-hidden bg-[var(--secondary)] w-full md:max-w-[313px] shrink-0 ${className}`}
     >
       <img
         src={imgSrc}
